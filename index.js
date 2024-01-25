@@ -9,7 +9,7 @@ const {connect} = require ('./connect');
 
 const { port, secret } = config; // Extrae el port (número de puerto) y el secret (probablemente usado para autenticación) del objeto de configuración importado.
 const app = express(); //  Crea una instancia de la aplicación Express, que actúa como el centro principal para manejar solicitudes y respuestas.
-const db = connect();
+const db = connect(); //llamo a funcion connect 
 app.set('config', config); // Hace que el objeto de configuración esté disponible en toda la aplicación
 app.set('pkg', pkg); // Hace que la información del paquete esté disponible en toda la aplicación usando
 
