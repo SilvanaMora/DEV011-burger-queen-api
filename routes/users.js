@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const connect = require ('../connect')
+const connect = require ('../connect');
 
 const {
   requireAuth,
@@ -23,7 +23,7 @@ const initAdminUser = async (app, next) => {
   };
   
     // Verifica si el administrador ya existe
-  const db = connect.connect ()
+    const db = connect.connect ()
     const existingAdmin = await db.collection('users').findOne({
       email: adminEmail,
     });

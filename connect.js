@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 const config = require('./config');
 
 // eslint-disable-next-line no-unused-vars
-const { dbUrl } = config;
+
 const options = {
   connectTimeoutMS: 3000,
   socketTimeoutMS: 3000,
